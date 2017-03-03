@@ -281,3 +281,14 @@ section {
         background: url(../img/ic-sprte.png) -515px 5px no-repeat;
     }
 }
+@media screen and (min-width: 768px) {
+    .data-center {
+        padding: 30px 40px;
+    }
+    .one {
+        padding-left: 70px;
+    }
+    .bottom h5 {
+        left: 38%;
+    }
+}
