@@ -1,10 +1,13 @@
-
 body {
-    font-family: arial, helvetica, sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 14px;
     line-height: 1.3;
     color: #000;
     background: #ededed;
+}
+
+section {
+    margin-bottom: 50px;
 }
 
 .container {
@@ -12,19 +15,165 @@ body {
     max-width: 1160px;
     margin: 0 auto;
 }
+
+.top {
+    background: #474747;
+    color: #c6c6c6;
+    position: relative;
+}
+
+.resource {
+    padding: 10px 100px 10px 20px;
+    font-size: 16px;
+}
+
+.data-center {
+    background: #2f549b;
+    padding: 40px 7px;
+    font-size: 16px;
+    position: absolute;
+    top: -3px;
+    right: 1px;
+    display: flex;
+}
+
+.one {
+    font-size: 20px;
+    color: #fff;
+    background: url(../img/bg-datacenter.png) 0 0 no-repeat;
+    background-size: contain;
+    padding-left: 30px;
+}
+
+.two {
+    font-size: 10px;
+    color: inherit;
+    padding: 1px 1px 1px 1px;
+}
+
+.two p {
+    margin: 0;
+}
+
+/****** CENTER *******/
+.center {
+
+}
+
 .block {
     text-align: center;
-    width: 230px;
+    /*width: 230px;*/
+    margin: 20px 10px;
+    color: #2f549b;
     background: #fff;
     padding: 15px 25px 15px;
     -webkit-box-shadow: 0 1px 2px 0 rgba(19, 19, 19, 0.25);
-    -moz-box-shadow:    0 1px 2px 0 rgba(19, 19, 19, 0.25);
-    box-shadow:         0 1px 2px 0 rgba(19, 19, 19, 0.25);
+    -moz-box-shadow: 0 1px 2px 0 rgba(19, 19, 19, 0.25);
+    box-shadow: 0 1px 2px 0 rgba(19, 19, 19, 0.25);
     cursor: pointer;
 }
+
 .block a {
     text-decoration: none;
 }
+
 .read {
     text-decoration: underline;
+}
+
+/******* BOTTOM *******/
+
+.bottom {
+    background: #c6c6c6;
+    position: relative;
+    padding: 60px 10px 20px 10px;
+    color: #5e5e5e;
+}
+
+.bottom h5 {
+    background: #2f549b;
+    padding: 15px 20px 15px 20px;
+    margin: 0;
+    position: absolute;
+    top: -40px;
+    left: 18%;
+    color: #fff;
+    font-size: 25px;
+}
+
+.bottom h5::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 24px 21px 0;
+    border-color: transparent #1f3560 transparent transparent;
+    line-height: 0;
+    _border-color: #000000 #1f3560 #000000 #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+    position: absolute;
+    top: 40px;
+    left: -24px;
+}
+
+.bottom h5::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 21px 24px 0 0;
+    border-color: #1f3560 transparent transparent transparent;
+    line-height: 0;
+    _border-color: #1f3560 #000000 #000000 #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+    position: absolute;
+    top: 40px;
+    right: -24px;
+
+}
+
+.wrap-tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.tools {
+    text-align: center;
+    width: 30%;
+}
+
+.tools:hover {
+    background: #2f549b;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.tools i {
+    text-align: center;
+    display: block;
+    width: 70px;
+    height: 66px;
+    background: url(../img/ic-sprte.png) 9px 0 no-repeat;
+}
+
+.tools2 i {
+    background-position: -95px 0;
+}
+
+.tools3 i {
+    background-position: -200px 0;
+}
+
+.tools4 i {
+    background-position: -305px 0;
+}
+
+.tools5 i {
+    background-position: -410px 0;
+}
+
+.tools6 i {
+    background-position: -505px 0;
 }
