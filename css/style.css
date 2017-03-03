@@ -20,6 +20,7 @@ section {
     background: #474747;
     color: #c6c6c6;
     position: relative;
+    margin-top: 20px;
 }
 
 .resource {
@@ -73,6 +74,11 @@ section {
     cursor: pointer;
 }
 
+.line {
+    background: url(../img/bg_line.png) 50% 50% no-repeat;
+    height: 10px;
+}
+
 .read {
     color: #c6c6c6;
     text-decoration: underline;
@@ -80,6 +86,9 @@ section {
 
 .block:hover {
     background: #2f549b;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(19, 19, 19, 1);
+    -moz-box-shadow: 0 1px 2px 0 rgba(19, 19, 19, 1);
+    box-shadow: 0 1px 2px 0 rgba(19, 19, 19, 1);
 }
 
 .block:hover .title {
@@ -194,4 +203,81 @@ section {
 
 .tools6 i {
     background-position: -505px 0;
+}
+
+/******* @MEDIA ********/
+
+@media screen and (min-width: 640px) {
+    .container {
+        max-width: 560px;
+    }
+
+    .resource {
+        font-size: 20px;
+    }
+
+    .data-center {
+        padding: 30px 20px;
+        font-size: 16px;
+        top: -11px;
+    }
+
+    .one {
+        font-size: 27px;
+        padding-left: 50px;
+    }
+
+    .two {
+        font-size: 13px;
+        padding: 8px 1px 1px 9px;
+    }
+
+    .two p {
+        padding: 0;
+        margin: 0;
+        line-height: 0.8;
+    }
+
+    .wrap-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .block {
+        width: 230px;
+    }
+
+    .mg-bottom img {
+        margin-bottom: 17px;
+    }
+
+    .bottom h5 {
+        left: 35%;
+    }
+
+    .tools {
+        padding: 0 42px;
+    }
+
+    .tools i {
+        margin: 0 auto;
+        background: url(../img/ic-sprte.png) 2px 0 no-repeat;
+    }
+
+    .tools2 i {
+        background: url(../img/ic-sprte.png) -100px 0 no-repeat;
+    }
+    .tools3 i {
+        background: url(../img/ic-sprte.png) -205px 5px no-repeat;
+    }
+    .tools4 i {
+        background: url(../img/ic-sprte.png) -312px 10px no-repeat;
+    }
+    .tools5 i {
+        background: url(../img/ic-sprte.png) -415px 5px no-repeat;
+    }
+    .tools6 i {
+        background: url(../img/ic-sprte.png) -515px 5px no-repeat;
+    }
 }
